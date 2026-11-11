@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equipos para tu punto de venta | GSI360</title>
+  <meta name="description" content="Arma el kit de equipos para tu negocio o restaurante (computador, lector, impresora, gaveta y pesa) y pide tu cotización por WhatsApp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Cambia aquí los colores para que coincidan con gsi.cl y omnisales.gsi360.cl */
+    :root { --navy:#0F3B6C; --navy-dark:#0A2A4D; --accent:#3B82F6; --soft:#EEF4FB; --bg:#F8FAFC; --ink:#1E293B; --green:#16A34A; }
+    body { font-family:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif; background:var(--bg); color:var(--ink); }
+    :focus-visible { outline:3px solid var(--accent); outline-offset:2px; }
+    .card { background:#fff; border:1px solid #E2E8F0; border-radius:8px; padding:1.5rem; }
+    .card h2 { border-left:4px solid var(--navy); padding-left:.75rem; font-weight:700; font-size:1.05rem; color:var(--navy-dark); margin-bottom:1rem; }
+    .opt { display:block; border:1px solid #CBD5E1; border-radius:8px; padding:.85rem 1rem; cursor:pointer; font-size:.875rem; }
+    .opt:hover { border-color:var(--accent); }
+    .opt:has(:checked) { border-color:var(--navy); background:var(--soft); }
+    .opt small { display:block; color:#64748B; margin-top:.25rem; font-size:.8rem; }
+    .opt input { accent-color:var(--navy); margin-right:.5rem; }
+    .field { margin-top:.25rem; width:100%; border:1px solid #CBD5E1; border-radius:8px; padding:.55rem .75rem; background:#fff; }
+    .btn-wa { background:var(--green); color:#fff; font-weight:700; padding:.8rem 1rem; border-radius:8px; width:100%; }
+    .btn-wa:hover { background:#15803D; }
+    details { border-bottom:1px solid #E2E8F0; padding:.9rem 0; }
+    summary { cursor:pointer; font-weight:600; color:var(--navy-dark); }
+    details p { margin-top:.5rem; font-size:.9rem; color:#475569; }
+  </style>
+</head>
+<body class="antialiased">
+
+  <header class="bg-white border-b-4 sticky top-0 z-50" style="border-color:var(--navy)">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center gap-3">
+      <img src="https://omnisales.gsi360.cl/img/logo-gsi360.png" alt="GSI360" class="h-10 w-auto">
+      <nav class="flex items-center gap-5 text-sm font-medium text-slate-700">
+        <a href="https://omnisales.gsi360.cl" class="hover:underline">OmniSales</a>
+        <a href="https://omnifoods.gsi360.cl" class="hover:underline">OmniFoods</a>
+        <a href="#cotizar" class="hidden sm:inline text-white px-4 py-2 rounded-lg" style="background:var(--navy)">Armar mi kit</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="text-white px-4 py-14" style="background:linear-gradient(120deg,var(--navy-dark),var(--navy))">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+      <div class="space-y-5">
+        <h1 class="text-3xl md:text-4xl font-bold leading-tight">Los equipos para tu caja, listos para usar</h1>
+        <p class="text-slate-200 max-w-md">Elige tu kit, cuéntanos dónde estás y te enviamos la cotización por WhatsApp. Lo instalamos y lo conectamos a tu sistema.</p>
+        <ul class="text-sm text-slate-200 space-y-1">
+          <li>✓ Para comercios y restaurantes</li>
+          <li>✓ Instalación en tu local, sujeta a factibilidad</li>
+          <li>✓ Cotización sin costo ni compromiso</li>
+        </ul>
+        <div class="flex flex-wrap gap-3 pt-2">
+          <a href="#cotizar" class="bg-white font-semibold px-5 py-3 rounded-lg" style="color:var(--navy-dark)">Armar mi kit</a>
+          <a href="https://wa.me/56998923562?text=Hola%2C%20quiero%20cotizar%20equipos%20para%20mi%20punto%20de%20venta" target="_blank" rel="noopener" class="border border-white/60 px-5 py-3 rounded-lg">Escríbenos por WhatsApp</a>
+        </div>
+      </div>
+      <img src="https://omnisales.gsi360.cl/img/omnisales%20y%20gsi360.png" alt="Equipo de GSI360 mostrando un punto de venta en un comercio" class="hidden md:block rounded-lg w-full object-cover max-h-80">
+    </div>
+  </section>
+
+  <section class="max-w-6xl mx-auto px-4 pt-12">
+    <h2 class="text-xl font-bold mb-6" style="color:var(--navy-dark)">Así de simple es pedir tu kit</h2>
+    <ol class="grid md:grid-cols-3 gap-4 text-sm">
+      <li class="card"><b class="text-base" style="color:var(--navy)">1. Armas tu kit</b><p class="mt-2 text-slate-600">Eliges el equipo y los accesorios que necesita tu caja.</p></li>
+      <li class="card"><b class="text-base" style="color:var(--navy)">2. Recibes tu cotización</b><p class="mt-2 text-slate-600">Te respondemos por WhatsApp con precio y plazo de entrega.</p></li>
+      <li class="card"><b class="text-base" style="color:var(--navy)">3. Lo dejamos funcionando</b><p class="mt-2 text-slate-600">Instalamos los equipos en tu mesón y los conectamos a tu sistema.</p></li>
+    </ol>
+  </section>
+
+  <main id="cotizar" class="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <form id="f" class="lg:col-span-2 space-y-6" onsubmit="return enviar(event)">
+
+      <fieldset class="card">
+        <h2>1. ¿Qué tipo de negocio tienes?</h2>
+        <div class="grid sm:grid-cols-2 gap-3">
+          <label class="opt"><input type="radio" name="biz" value="comercio" checked><b>Comercio</b><small>Almacén, minimarket, ferretería, tienda de mascotas u otro local de venta.</small></label>
+          <label class="opt"><input type="radio" name="biz" value="restaurante"><b>Restaurante o cafetería</b><small>Atención en salón, para llevar o con cocina.</small></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="card">
+        <h2>2. Elige el equipo principal</h2>
+        <div class="grid sm:grid-cols-2 gap-3">
+          <label class="opt"><input type="radio" name="base" value="pc" checked><b>PC de escritorio</b><small>Computador, monitor 19", teclado y mouse.</small></label>
+          <label class="opt"><input type="radio" name="base" value="aio"><b>All in One</b><small>Todo en una pantalla, ocupa poco espacio en el mesón.</small></label>
+          <label class="opt"><input type="radio" name="base" value="aio_touch"><b>All in One táctil</b><small>Se maneja con el dedo. Muy usado en salón.</small></label>
+          <label class="opt"><input type="radio" name="base" value="none"><b>Ya tengo computador o tablet</b><small>Cotizo solo los accesorios.</small></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="card">
+        <h2>3. Agrega lo que necesitas</h2>
+        <p class="text-sm text-slate-500 -mt-2 mb-3">Parte con un kit sugerido o marca tú mismo.</p>
+        <div id="presets" class="flex flex-wrap gap-2 mb-4"></div>
+        <div class="grid sm:grid-cols-2 gap-3">
+          <label class="opt"><input type="checkbox" name="p" value="lector">Lector de códigos de barras</label>
+          <label class="opt"><input type="checkbox" name="p" value="boleta">Impresora térmica 80 mm (boletas)</label>
+          <label class="opt"><input type="checkbox" name="p" value="gaveta">Gaveta de dinero</label>
+          <label data-for="comercio" class="opt"><input type="checkbox" name="p" value="pesa">Pesa electrónica (venta a granel)</label>
+          <label data-for="restaurante" class="opt hidden"><input type="checkbox" name="p" value="comanda">Impresora de comandas (cocina o barra)</label>
+        </div>
+        <label class="block text-sm mt-4">Cantidad de cajas o puestos de venta
+          <select name="qty" class="ml-2 border border-slate-300 rounded-lg px-3 py-1.5 bg-white"><option>1</option><option>2</option><option>3</option><option>4</option><option>5 o más</option></select>
+        </label>
+      </fieldset>
+
+      <fieldset class="card">
+        <h2>4. ¿Cómo quieres recibirlo?</h2>
+        <div class="space-y-3">
+          <label class="opt"><input type="radio" name="setup" value="solo"><b>Solo los equipos</b><small>Los retiras o te los enviamos.</small></label>
+          <label class="opt"><input type="radio" name="setup" value="remota"><b>Con ayuda a distancia</b><small>Te guiamos paso a paso por videollamada para conectar todo.</small></label>
+          <label class="opt"><input type="radio" name="setup" value="local" checked><b>Instalado en tu local</b><small>Dejamos todo funcionando en el mesón. Sujeto a factibilidad en tu zona.</small></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="card">
+        <h2>5. ¿A quién le enviamos la cotización?</h2>
+        <div class="grid sm:grid-cols-2 gap-4 text-sm">
+          <label>Nombre *<input name="nombre" required autocomplete="name" class="field"></label>
+          <label>WhatsApp *<input name="fono" required inputmode="tel" autocomplete="tel" placeholder="+56 9 1234 5678" class="field"></label>
+          <label>Comuna *<input name="comuna" required class="field"></label>
+          <label>Nombre de tu negocio<input name="negocio" class="field"></label>
+        </div>
+        <label class="flex gap-2 text-sm mt-4"><input type="checkbox" name="sercotec" class="mt-1" style="accent-color:var(--navy)">
+          <span>Voy a postular a Sercotec. Necesito la cotización formal para adjuntar.</span></label>
+      </fieldset>
+
+      <button type="submit" class="btn-wa lg:hidden">Pedir cotización por WhatsApp</button>
+    </form>
+
+    <aside class="lg:col-span-1">
+      <div class="card lg:sticky lg:top-24 space-y-4">
+        <h2>Tu kit</h2>
+        <ul id="resumen" class="text-sm text-slate-600 space-y-2" aria-live="polite"></ul>
+        <button form="f" type="submit" class="btn-wa hidden lg:block">Pedir cotización por WhatsApp</button>
+        <p class="text-xs text-slate-500">Respondemos con precio y plazo de entrega. No tiene costo ni compromiso.</p>
+      </div>
+    </aside>
+  </main>
+
+  <section class="max-w-3xl mx-auto px-4 pb-14">
+    <h2 class="text-xl font-bold mb-2" style="color:var(--navy-dark)">Preguntas frecuentes</h2>
+    <details><summary>¿Puedo cotizar solo accesorios?</summary><p>Sí. En el paso 2 elige "Ya tengo computador o tablet" y marca solo lo que necesitas.</p></details>
+    <details><summary>¿Dónde pueden instalar en mi local?</summary><p>La visita presencial depende de la factibilidad técnica y geográfica (hoy RM, Valparaíso y Concepción). Si no es posible, te guiamos paso a paso por videollamada.</p></details>
+    <details><summary>¿Me sirve la cotización para postular a Sercotec?</summary><p>Marca la casilla en el paso 5 y te enviamos una cotización formal para adjuntar a tu postulación.</p></details>
+    <details><summary>¿Y el sistema de ventas?</summary><p>Esta página es solo para los equipos. Conoce el sistema en <a class="underline" href="https://omnisales.gsi360.cl">OmniSales</a> (comercios) y <a class="underline" href="https://omnifoods.gsi360.cl">OmniFoods</a> (restaurantes).</p></details>
+  </section>
+
+  <footer class="text-slate-300 px-4 py-8 text-center text-sm" style="background:var(--navy-dark)">
+    <img src="https://omnisales.gsi360.cl/img/logo-gsi360.png" alt="GSI360" class="h-8 mx-auto mb-3 bg-white rounded px-2 py-1">
+    Equipos, instalación y capacitación local por GSI360 ·
+    <a class="underline" href="https://omnisales.gsi360.cl">OmniSales</a> ·
+    <a class="underline" href="https://omnifoods.gsi360.cl">OmniFoods</a>
+  </footer>
+
+  <script>
+    const WA = '56998923562';
+    const FORM_ENDPOINT = ''; // Opcional: URL del webhook (Zoho Sheet u otro) para registrar cada solicitud
+    const BASES = { pc:'PC de escritorio', aio:'All in One', aio_touch:'All in One táctil', none:'Ya tiene computador o tablet' };
+    const PERIF = { lector:'Lector de códigos de barras', boleta:'Impresora térmica 80 mm', gaveta:'Gaveta de dinero', pesa:'Pesa electrónica', comanda:'Impresora de comandas' };
+    const SETUP = { solo:'Solo equipos', remota:'Con ayuda a distancia', local:'Instalado en el local, con capacitación' };
+    const PRESETS = {
+      comercio: [['Solo equipo',[]],['Con lector',['lector']],['Con impresora',['lector','boleta']],['Con gaveta',['lector','boleta','gaveta']],['Completo con pesa',['lector','boleta','gaveta','pesa']]],
+      restaurante: [['Kit salón',['boleta','gaveta']],['Kit salón y cocina',['boleta','gaveta','comanda']]]
+    };
+    const f = document.getElementById('f');
+    const val = n => f.querySelector(`[name="${n}"]:checked`)?.value;
+    const picks = () => [...f.querySelectorAll('[name="p"]:checked')].map(i => i.value);
+    const bizName = () => val('biz') === 'comercio' ? 'Comercio' : 'Restaurante o cafetería';
+
+    function setPicks(list){ f.querySelectorAll('[name="p"]').forEach(i => i.checked = list.includes(i.value)); resumen(); }
+
+    function cambiaNegocio(){
+      const biz = val('biz');
+      f.querySelectorAll('[data-for]').forEach(l => {
+        const on = l.dataset.for === biz;
+        l.classList.toggle('hidden', !on);
+        if(!on) l.querySelector('input').checked = false;
+      });
+      const box = document.getElementById('presets'); box.innerHTML = '';
+      PRESETS[biz].forEach(([name, list]) => {
+        const b = document.createElement('button');
+        b.type = 'button'; b.textContent = name;
+        b.className = 'text-xs font-semibold border rounded-full px-3 py-1.5 hover:bg-white';
+        b.style.cssText = 'border-color:var(--navy);color:var(--navy);background:var(--soft)';
+        b.onclick = () => setPicks(list);
+        box.appendChild(b);
+      });
+      if(biz === 'restaurante') f.querySelector('[name="base"][value="aio_touch"]').checked = true;
+      resumen();
+    }
+
+    function resumen(){
+      const p = picks();
+      const rows = [
+        ['Negocio', bizName()],
+        ['Equipo', BASES[val('base')]],
+        ['Accesorios', p.length ? p.map(k => PERIF[k]).join(', ') : 'Ninguno'],
+        ['Puestos', f.qty.value],
+        ['Entrega', SETUP[val('setup')]]
+      ];
+      document.getElementById('resumen').innerHTML = rows.map(([k,v]) => `<li><b class="text-slate-900">${k}:</b> ${v}</li>`).join('');
+    }
+
+    function enviar(e){
+      e.preventDefault();
+      const p = picks();
+      const d = Object.fromEntries(new FormData(f));
+      const lineas = [
+        'Hola GSI360, quiero cotizar un kit de equipos:',
+        `- Negocio: ${bizName()}`,
+        `- Equipo: ${BASES[val('base')]}`,
+        `- Accesorios: ${p.length ? p.map(k => PERIF[k]).join(', ') : 'Ninguno'}`,
+        `- Puestos de venta: ${d.qty}`,
+        `- Entrega: ${SETUP[val('setup')]}`,
+        d.sercotec ? '- Postulo a Sercotec: necesito cotización formal' : null,
+        '',
+        `Nombre: ${d.nombre}`,
+        `Comuna: ${d.comuna}`,
+        d.negocio ? `Negocio: ${d.negocio}` : null,
+        `WhatsApp: ${d.fono}`
+      ].filter(l => l !== null).join('\n');
+
+      window.open(`https://wa.me/${WA}?text=${encodeURIComponent(lineas)}`, '_blank');
+
+      if(FORM_ENDPOINT){
+        try {
+          fetch(FORM_ENDPOINT, { method:'POST', mode:'no-cors', keepalive:true,
+            body: JSON.stringify({ fecha:new Date().toISOString(), ...d, negocio_tipo:val('biz'), base:val('base'), accesorios:p, entrega:val('setup') }) });
+        } catch(_) {}
+      }
+      return false;
+    }
+
+    f.addEventListener('change', e => e.target.name === 'biz' ? cambiaNegocio() : resumen());
+    cambiaNegocio();
+  </script>
+</body>
+</html>
